@@ -1,0 +1,7 @@
+*.insyncdl
+Thumbs.db
+.DS_Store
+.uuid
+.directory
+desktop.ini
+.idea
