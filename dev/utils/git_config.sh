@@ -20,6 +20,9 @@ git config --global merge.tool kdiff3
 git config --global gpg.program gpg2
 git config --global pull.rebase false
 git config --global init.defaultBranch main
+git config --global checkout.workers 0
+git config --global fetch.parallel 0
+git config --global submodule.fetchJobs 0
 
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
