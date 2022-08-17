@@ -13,7 +13,6 @@ fi
 
 git config --global user.name "$1"
 git config --global user.email "$2"
-git config --global init.defaultBranch master
 git config --global color.ui auto
 git config --global core.editor vim
 git config --global merge.tool kdiff3
