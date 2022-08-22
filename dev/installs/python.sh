@@ -4,16 +4,14 @@
 # description: Installs multiple python versions
 
 echo "Installing multiple Python versions and devel libs"
-dnf install -y python3.6 python3.7 python3.8 python3.9 python3.10 python3.11 pipenv python3-Cython python3-extension-helpers python3-devel python3.11-devel
+dnf install -y python3.7 python3.8 python3.9 python3.10 python3.11 pipenv python3-Cython python3-extension-helpers python3-devel python3.11-devel
 
 echo "Preparing pip"
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3.7 ./get-pip.py
-python3.8 ./get-pip.py
-python3.9 ./get-pip.py
-python3.10 ./get-pip.py
-python3.11 ./get-pip.py
-rm -f ./get-pip.py
+python3.7 -m ensurepip --upgrade
+python3.8 -m ensurepip --upgrade
+python3.9 -m ensurepip --upgrade
+python3.10 -m ensurepip --upgrade
+python3.11 -m ensurepip --upgrade
 
 echo "Installing Cython"
 python3.7 -m pip install --upgrade Cython
