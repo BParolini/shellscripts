@@ -31,7 +31,7 @@ BASEDIR=$(dirname "$0")
 . "$BASEDIR/nodejs.sh"
 . "$BASEDIR/vscode.sh"
 . "$BASEDIR/podman.sh"
-. "$BASEDIR/docker/docker.sh"
+# . "$BASEDIR/docker/docker.sh"
 . "$BASEDIR/kubectl.sh"
 . "$BASEDIR/virtualization.sh"
 . "$BASEDIR/python.sh"
