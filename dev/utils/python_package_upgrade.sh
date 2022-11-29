@@ -9,4 +9,4 @@ then
     exit 1
 fi
 
-"$1" -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 "$1" -m pip install -U
+"$1" -m pip list --outdated | awk '{print $1}' | grep -v Package | grep -Ev -- "^-+" | xargs -n1 "$1" -m pip install -U
