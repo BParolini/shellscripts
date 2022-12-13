@@ -3,15 +3,15 @@
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Installs Git, NodeJS and all C/C++ development tools
 
-echo "dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo"
-dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+# echo "dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo"
+# dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 
-echo
-echo "=============================="
-echo
+# echo
+# echo "=============================="
+# echo
 
 echo "dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql"
-dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql
+dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql dotnet
 
 echo
 echo "=============================="
