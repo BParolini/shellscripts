@@ -5,6 +5,7 @@
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+flatpak install -y --or-update io.podman_desktop.PodmanDesktop
 flatpak install -y --or-update com.getpostman.Postman
 flatpak install -y --or-update io.github.shiftey.Desktop # GitHub Desktop
 flatpak install -y --or-update com.github.artemanufrij.regextester
