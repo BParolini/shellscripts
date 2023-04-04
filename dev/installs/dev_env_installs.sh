@@ -11,7 +11,7 @@
 # echo
 
 echo "dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql"
-dnf install -y dnf-plugins-core git-all kdiff3 gh direnv jq jql dotnet
+dnf install -y dnf-plugins-core git-core kdiff3 gh direnv jq jql dotnet
 
 echo
 echo "=============================="
@@ -35,3 +35,4 @@ BASEDIR=$(dirname "$0")
 . "$BASEDIR/kubectl.sh"
 . "$BASEDIR/virtualization.sh"
 . "$BASEDIR/python.sh"
+. "$BASEDIR/protobuf.sh"

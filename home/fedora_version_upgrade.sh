@@ -13,6 +13,6 @@ dnf install -y python3-dnf-plugin-system-upgrade
 
 dnf upgrade --refresh
 
-dnf system-upgrade download --releasever="$1"
+dnf system-upgrade download --releasever="$1" --allowerasing
 
 dnf system-upgrade reboot

@@ -4,4 +4,4 @@
 # description: Installs Podman
 
 echo "Installing podman"
-dnf install -y podman podman-compose podman-plugins buildah
+dnf install -y podman podman-compose podman-plugins buildah podman-docker podman-compose
