@@ -26,6 +26,7 @@ echo
 
 BASEDIR=$(dirname "$0")
 
+. "$BASEDIR/neovim.sh"
 . "$BASEDIR/vim.sh"
 . "$BASEDIR/cpp_libs_and_tools.sh"
 . "$BASEDIR/nodejs.sh"
