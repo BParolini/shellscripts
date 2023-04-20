@@ -36,3 +36,4 @@ BASEDIR=$(dirname "$0")
 . "$BASEDIR/virtualization.sh"
 . "$BASEDIR/python.sh"
 . "$BASEDIR/protobuf.sh"
+. "$BASEDIR/lua.sh"
