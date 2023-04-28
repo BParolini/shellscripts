@@ -11,9 +11,9 @@ echo "Preparing pip"
 python3.10 -m ensurepip --upgrade
 python3.11 -m ensurepip --upgrade
 
-echo "Installing Cython"
-python3.10 -m pip install --upgrade Cython
-python3.11 -m pip install --upgrade Cython
+echo "Installing Cython, LSP + extras"
+python3.10 -m pip install --upgrade pip setuptools wheel Cython python-lsp-server yapf flake8 pylint
+python3.11 -m pip install --upgrade pip setuptools wheel Cython python-lsp-server yapf flake8 pylint
 
 echo "Upgrading packages for all installed Python versions"
 BASEDIR=$(dirname "$0")
