@@ -6,6 +6,7 @@
 sudo dnf install -y nodejs-bash-language-server ShellCheck
 
 go install golang.org/x/tools/gopls@latest
+go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 
 mkdir -p "$HOME/apps/lsp"
