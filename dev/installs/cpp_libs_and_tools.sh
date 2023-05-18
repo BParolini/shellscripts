@@ -5,8 +5,11 @@
 
 echo "Installing C/C++ libs, tools and IDEs"
 
-echo "Installing CLang"
-dnf install -yb clang clang-devel clang-libs clang-resource-filesystem clang-tools-extra
+echo "Installing LLVM/CLang"
+dnf install -yb llvm llvm-devel llvm-libs llvm-static
+dnf install -yb clang clang-devel clang-libs clang-resource-filesystem clang-tools-extra lldb
+dnf install -yb lld lld-devel lld-libs
+dnf install -yb polly polly-devel
 
 echo
 echo "=============================="

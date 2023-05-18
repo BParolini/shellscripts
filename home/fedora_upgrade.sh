@@ -10,5 +10,12 @@ echo
 echo "=============================="
 echo
 
+echo "dnf upgrade debuginfo"
+dnf upgrade -y --enablerepo="*-debuginfo" "*-debuginfo"
+
+echo
+echo "=============================="
+echo
+
 echo "dnf autoremove -y"
 dnf autoremove -y
