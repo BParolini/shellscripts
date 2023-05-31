@@ -22,4 +22,5 @@ flatpak install -y --or-update flathub com.discordapp.Discord
 flatpak install -y --or-update org.keepassxc.KeePassXC
 flatpak install -y --or-update com.calibre_ebook.calibre
 flatpak install -y --or-update com.simplenote.Simplenote
+flatpak install -y --or-update flathub md.obsidian.Obsidian
 # flatpak install -y --or-update org.gnome.Solanum
