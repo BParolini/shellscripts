@@ -6,7 +6,7 @@
 echo "Prepare npm and JetBrains scripts directories"
 mkdir -p "$HOME/apps/jetbrains"
 
-printf 'export PATH=$JAVA_HOME/bin:$JETBRAINS_SCRIPTS:$NPM_CONFIG_PREFIX/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH\n\n' >> $HOME/.zshrc
+printf 'export PATH=$JAVA_HOME/bin:$NPM_CONFIG_PREFIX/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH\n\n' >> $HOME/.zshrc
 
 source $HOME/.zshrc
 
