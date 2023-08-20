@@ -9,9 +9,6 @@ go install golang.org/x/tools/gopls@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 
-mkdir -p "$HOME/apps/lsp"
-git clone --depth 1 git@github.com:eclipse/eclipse.jdt.ls.git "$HOME/apps/lsp/jdtls"
-
 # Using sudo to use the system's npm
 sudo npm install -g dockerfile-language-server-nodejs \
                     graphql-language-service-server \

@@ -10,6 +10,6 @@ then
 fi
 
 echo "Installing and setting ZSH as $1's default shell"
-dnf install -y zsh tmux tmux-top
+dnf install -y zsh tmux tmux-top alacritty
 
 usermod --shell /usr/bin/zsh "$1"
