@@ -4,4 +4,4 @@
 # description: Installs python LSP and debug dependencies in venv
 
 echo "Installing Cython, LSP + extras"
-$PWD/.venv/bin/python -m pip install --upgrade pip setuptools wheel Cython python-lsp-server yapf flake8 pylint
+"$PWD/.venv/bin/python" -m pip install --upgrade pip setuptools wheel Cython python-lsp-server yapf flake8 pylint
