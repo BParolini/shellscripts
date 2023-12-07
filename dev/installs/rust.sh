@@ -7,6 +7,6 @@ echo "Installing Rust and libraries"
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-mdir -p ~/.zfunc
+mkdir -p ~/.zfunc
 rustup completions zsh > ~/.zfunc/_rustup
 rustup completions zsh cargo > ~/.zfunc/_cargo
