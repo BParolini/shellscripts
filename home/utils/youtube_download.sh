@@ -9,4 +9,4 @@ then
     exit 1
 fi
 
-yt-dlp -o '%(title)s.%(ext)s' -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "$1"
+yt-dlp -o '%(title)s.%(ext)s' --merge-output-format mp4 "$1"
