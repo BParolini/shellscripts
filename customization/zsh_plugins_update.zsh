@@ -15,7 +15,7 @@ do
     echo "Updating $plugin"
     (
         cd "$plugin" || continue
-        git fetch -p -P --depth=1
-        git pull --depth=1
+        git fetch -p -P
+        git pull
     )
 done
