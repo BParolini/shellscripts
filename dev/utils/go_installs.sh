@@ -11,6 +11,7 @@ go install golang.org/x/tools/cmd/godoc@latest
 go install github.com/cosmtrek/air@latest
 go install github.com/a-h/templ/cmd/templ@latest
 go install github.com/segmentio/golines@latest
+go install golang.org/x/build/cmd/gorebuild@latest
 
 # Extra apps
 go install github.com/jesseduffield/lazygit@latest
