@@ -12,6 +12,7 @@ go install github.com/air-verse/air@latest
 go install github.com/a-h/templ/cmd/templ@latest
 go install github.com/segmentio/golines@latest
 go install golang.org/x/build/cmd/gorebuild@latest
+go install google.golang.org/protobuf@latest
 go install github.com/golang/protobuf/protoc-gen-go@latest
 
 # Extra apps
