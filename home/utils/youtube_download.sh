@@ -9,4 +9,4 @@ then
     exit 1
 fi
 
-yt-dlp -o '%(title)s.%(ext)s' --merge-output-format mp4 "$1"
+yt-dlp -o '%(title)s.%(ext)s' --sub-format srt --write-subs --embed-subs --yes-playlist --merge-output-format mkv "$1"
