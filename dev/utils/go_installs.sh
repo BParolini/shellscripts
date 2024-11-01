@@ -15,7 +15,7 @@ go install github.com/spf13/cobra-cli@latest
 
 # Protobuf
 go install google.golang.org/protobuf@latest
-go install github.com/golang/protobuf/protoc-gen-go@latest
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 
 # Extra apps
 go install github.com/air-verse/air@latest
