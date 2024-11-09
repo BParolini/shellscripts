@@ -12,6 +12,7 @@ go install github.com/a-h/templ/cmd/templ@latest
 go install github.com/segmentio/golines@latest
 go install golang.org/x/build/cmd/gorebuild@latest
 go install github.com/spf13/cobra-cli@latest
+go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
 
 # Protobuf
 go install google.golang.org/protobuf@latest
