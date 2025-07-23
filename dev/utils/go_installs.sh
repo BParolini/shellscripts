@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env sh -x
 
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Installs or updates installed go packages
@@ -15,7 +15,6 @@ go install github.com/spf13/cobra-cli@latest
 go install -tags 'postgres,sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
 
 # Protobuf
-go install google.golang.org/protobuf@latest
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 
 # Extra apps
