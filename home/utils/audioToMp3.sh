@@ -11,5 +11,5 @@ fi
 
 for a in ./*."$1"
 do
-    ffmpeg -i "$a" -acodec libmp3lame -ar 48000 -b:a 192k "${a[@]/%$1/mp3}"
+    ffmpeg -i "$a" -acodec libmp3lame -ar 48000 -b:a 192k "${a%.$1}.mp3"
 done
