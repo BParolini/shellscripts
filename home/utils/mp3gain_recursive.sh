@@ -6,14 +6,17 @@
 walk_dir() {
     for pathname in "$1"/*
     do
-        count=`ls -1 "$pathname"/*.mp3 2>/dev/null | wc -l`
-        if [ -d "$pathname" ] && [ $count == 0 ]
+        count=$(fd -d 1 ".mp3" "$pathname" 2>/dev/null | wc -l)
+        if [ -d "$pathname" ] && [ "$count" -eq 0 ]
         then
             walk_dir "$pathname"
         else
-            cd "$pathname"
-            mp3gain -r -c -k -a *.mp3
-            cd -
+            (
+                cd "$pathname" || return
+                echo "$pathname"
+                mp3gain -c -k -a -q ./*.mp3
+                echo
+            )
         fi
     done
 }
