@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env -S sh -x -e
 
 # author: Bruno Parolini brunoparolini@gmail.com
 # description: Installs or updates installed go packages
